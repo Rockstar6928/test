@@ -1,0 +1,9 @@
+<strong>Heroe component woks</strong>
+<ul>
+  <li *ngFor="let heroe of listaHeroes; let i = index">
+    {{i+1}} - {{heroe}}
+  </li>
+  <p>Heroe borrado</p>
+  <strong *ngIf="heroeBorrado">{{heroeBorrado}}</strong>
+</ul>
+<button (click)="borrarHeroe()">Borrar</button>
